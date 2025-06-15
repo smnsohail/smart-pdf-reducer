@@ -27,7 +27,7 @@ A lightweight Node.js and Express.js application that allows users to upload a P
 
 ## 📸 Screenshot
 
-![UI Screenshot](screenshots/ui-screenshot.png) <!-- Add a real screenshot later -->
+![UI Screenshot(Will upload later)](screenshots/ui-screenshot.png)
 
 ---
 
