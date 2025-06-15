@@ -1,0 +1,19 @@
+<div class="upload-wrapper">
+  <div class="upload-card">
+    <h2>Smart PDF Reducer</h2>
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <label for="file">Upload JPG Image:</label>
+      <input type="file" id="file" (change)="onFileChange($event)" accept=".jpg,.jpeg" required />
+
+      <label for="size">Target PDF Size (KB):</label>
+      <input type="number" id="size" [(ngModel)]="sizeLimit" name="sizeLimit" min="50" max="500" required />
+
+      <button type="submit" [disabled]="!selectedFile">Convert to PDF</button>
+    </form>
+
+    <div class="result" *ngIf="downloadUrl">
+      <p>✅ Conversion successful!</p>
+      <a [href]="downloadUrl" download class="download-btn">Download PDF</a>
+    </div>
+  </div>
+</div>
